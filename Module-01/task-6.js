@@ -3,11 +3,9 @@ let inpt;
 
 do {
   inpt = prompt('Введите число');
-  parseInt(inpt, radix);
-  parseInt(totl, radix);
-  console.log(totl, inpt);
+  inp = Number(inpt);
+  totl = Number(totl);
   console.log(typeof totl);
-  totl = totl + inpt;
+  totl = Number(totl) + Number(inpt);
 } while (inpt != null);
 alert(totl);
-
