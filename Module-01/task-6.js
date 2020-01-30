@@ -4,8 +4,7 @@ let inpt;
 do {
   inpt = prompt('Введите число');
   inp = Number(inpt);
-  totl = Number(totl);
   console.log(typeof totl);
-  totl = Number(totl) + Number(inpt);
+  totl += inp;
 } while (inpt != null);
 alert(totl);
