@@ -4,7 +4,6 @@ const australia = 'АВСТРАЛИЯ';
 const india = 'ИНДИЯ';
 const jamayka = 'ЯМАЙКА';
 let alertMessage = '';
-let country;
 let shipmentPrice;
 let input = prompt('Введите страну доставки');
 input = input.toUpperCase();
