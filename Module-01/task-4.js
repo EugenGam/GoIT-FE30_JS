@@ -3,7 +3,7 @@ let credits = 23580;
 const answer = prompt('Сколько дроидов вы желаете купить?');
 let droidTotalPrice = 0;
 let text;
-const droidQty = answer;
+const droidQty = +answer;
 droidTotalPrice = droidQty * pricePerDroid;
 if (droidTotalPrice > credits) {
   alert('Недостаточно средств');
@@ -14,3 +14,4 @@ if (droidTotalPrice > credits) {
   text = `Вы купили ${droidQty} дроидов, на счету осталось: ${credits}`;
   alert(text);
 }
+
