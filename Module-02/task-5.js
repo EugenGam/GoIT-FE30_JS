@@ -5,10 +5,10 @@ const checkForSpam = function(message) {
   console.log(spam);
   const sale = message.indexOf('SALE', 0);
   console.log(sale);
-  if (spam < 0 || sale < 0) {
-    let answ = 'true';
+  if (spam < 0 && sale < 0) {
+    answ = 'false';
   } else {
-    let answ = 'false';
+    answ = 'true';
   }
   return answ;
 };
