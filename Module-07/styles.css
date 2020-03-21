@@ -1,0 +1,29 @@
+#validation-input {
+  border: 3px solid #bdbdbd;
+  margin-bottom: 20px;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#font-size-control {
+  display: block;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: block;
+}
