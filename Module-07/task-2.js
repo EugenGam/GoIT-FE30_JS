@@ -15,5 +15,4 @@ ingredients.forEach(element => {
   lish.push(element);
 });
 
-console.log(ingredients);
 document.getElementById('ingredients').append(...lish);
