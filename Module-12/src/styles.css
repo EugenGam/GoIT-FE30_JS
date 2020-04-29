@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url('./images/bg-pattern.png');
+}
+
+/* roboto-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('./fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('./fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+h1 {
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #333333;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 45px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.input {
+  width: 600px;
+  font-size: 24px;
+  color: #333333;
+  border-color: #333333;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.input:focus {
+  border-color: rgb(111, 112, 112);
+  outline: none;
+  border-style: dashed;
+}
+
+h3 {
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #333333;
+  font-size: 24px;
+
+}
+
+.countriesList {
+  width: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 0px;
+  border-color: #333333;
+  border-style: solid;
+  border-width: 1px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #333333;
+  font-size: 22px;
+  list-style: none;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.countriesList__element {
+  margin-bottom: 10px;
+}
+
+
+.notify {
+  transition: 1s;
+  position: absolute;
+  z-index: 100;
+  right: 50px;
+  top: 50px;
+  width: 15vw;
+  height: 5vw;
+  background-color: tomato;
+  font-size: 1.5vw;
+  padding: 1vw;
+  padding-top: 1.5vw;
+  text-align: center;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.country_info {
+  visibility: hidden;
+  opacity: 0;
+  padding-bottom: 100px;
+}
+
+.info__name {
+  font-family: 'Roboto';
+  font-weight: 700;
+  color: #333333;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+.info__cont {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  font-family: 'Roboto';
+  color: #333333;
+  font-weight: 700;
+}
+
+.info__pic {
+  width: 400px;
+  height: 100%;
+}
+
+.tags { 
+  font-weight: 400;
+}
+
+.lang {
+  font-size: 24px;
+  font-weight: 400;
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
